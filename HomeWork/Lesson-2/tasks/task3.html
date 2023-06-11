@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Дано рік народження (дата: 1 січня) та поточний рік. Знайти кількість років.
+
+      //1.Вводимо данні
+
+      let yearOfBirth = parseInt(prompt(`Введіть рік народження`, `1923`));
+      let presentYear = 2023;
+
+      //2. Обчислюємо результат
+
+      let age = presentYear - yearOfBirth;
+
+      //3. Виводимо результат
+
+      document.write(`Вам ${age}`);
+    </script>
+  </body>
+</html>

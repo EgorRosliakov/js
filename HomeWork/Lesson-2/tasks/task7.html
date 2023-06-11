@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //З клавіатури вводяться вартість товару та кількість одиниць 3 товарів. Обчислити вартість кожного товару окремо та загальну вартість. Вивести чек (як у супермаркеті) використовуючи елементи розмітки.
+
+      //1.Вводимо данні
+
+      let costProduct1 = parseFloat(
+        prompt(`Введіть вартість першого товару`, "0")
+      );
+      let product1 = parseInt(prompt(`Введіть кількість першого товару`, "0"));
+      let costProduct2 = parseFloat(
+        prompt(`Введіть вартість другого товару`, "0")
+      );
+      let product2 = parseInt(prompt(`Введіть кількість другого товару`, "0"));
+      let costProduct3 = parseFloat(
+        prompt(`Введіть вартість третього товару`, "0")
+      );
+      let product3 = parseInt(prompt(`Введіть кількість третього товару`, "0"));
+
+      //2. Обчислюємо данні
+
+      let totalProduct1 = product1 * costProduct1;
+      let totalProduct2 = product2 * costProduct2;
+      let totalProduct3 = product3 * costProduct3;
+
+      let totalCost = totalProduct1 + totalProduct2 + totalProduct3;
+
+      //3. Виводимо результат
+
+      document.write(
+        `<h1>Чек</h1> <br> Перший товар к-сть ${product1} ціна ${costProduct1}/1 = ${totalProduct1} <br> 
+                           Другий товар к-сть ${product2} ціна ${costProduct2}/1 = ${totalProduct2} <br> 
+                           Третій товар к-сть ${product3} ціна ${costProduct3}/1 = ${totalProduct3} <br>
+                           <h2>Загальна вартість ${totalCost}</h2>`
+      );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Дано кількість секунд, що пройшла від початку доби. Визначити скільки це годин і хвилин.
+
+      //1. Вводимо данні
+
+      let quantitySeconds = parseFloat(prompt("Введіть кількість секунд", `0`));
+      const oneMinutes = 60;
+      const oneHour = 3600;
+
+      //2.Обчислюємо
+
+      let quantityMinutes = Math.floor(quantitySeconds / oneMinutes);
+      let quantityHours = Math.floor(quantitySeconds / oneHour);
+
+      //3. Виводимо
+
+      document.write(
+        `Від початку доби пройшло ${quantityHours} години і ${quantityMinutes} хвилин`
+      );
+    </script>
+  </body>
+</html>

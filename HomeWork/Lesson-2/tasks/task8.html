@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Знайти суму випадкового номера місяця (від 1 до 12) та випадкового номера дня (від 0 до 6).
+
+      // Обчислюємо данні
+
+      let firstMonth = 1;
+      let lastMonth = 12;
+      let randomMonth =
+        firstMonth + Math.floor(Math.random() * (lastMonth - firstMonth + 1));
+      let firstDay = 0;
+      let lastDay = 6;
+      let randomDay =
+        firstDay + Math.floor(Math.random() * (lastDay - firstDay + 1));
+      let totalSum = randomMonth + randomDay;
+
+      // Виводимо данні
+
+      document.write(
+        `Випадковий номер місяця - ${randomMonth} <br> Випадковий номер дня - ${randomDay} <br> Сума = ${totalSum}`
+      );
+    </script>
+  </body>
+</html>

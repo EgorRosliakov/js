@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Дано довжину у сантиметрах. Визначати скільки це метрів і кілометрів.
+
+      //1.Вводимо данні
+
+      let lengthCentimeters = parseInt(
+        prompt(`Введіть довжину у сантиметрах`, `0`)
+      );
+      const valueMeters = 100;
+      const valueKilometers = 100000;
+
+      //2.Обчислюємо
+
+      let lengthMeters = lengthCentimeters / valueMeters;
+      let lengthKilometers = lengthCentimeters / valueKilometers;
+
+      //3. Виводимо
+
+      document.write(
+        `Сантиметри = ${lengthCentimeters} <br> Метрів = ${lengthMeters} <br> Кілометрів = ${lengthKilometers}`
+      );
+    </script>
+  </body>
+</html>

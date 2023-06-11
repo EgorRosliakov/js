@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Дано вартість одиниці товару і кількість. Знайти загальну вартість та ПДВ (5% від загальної вартості).
+
+      //1. Вводимо данні
+
+      let numberGoods = parseInt(prompt(`Введіть кількість товару`, "0"));
+      let costProduct = parseFloat(prompt(`Введіть ціну товару`, "0"));
+      const valueAddedTax = 5;
+
+      //2. Обчислюємо результат
+
+      let totalPrice = numberGoods * costProduct;
+      let tax = (totalPrice * valueAddedTax) / 100;
+
+      //3. Виводимо результат
+
+      document.write(`Ціна вашого товару = ${totalPrice} <br> ПДВ = ${tax}`);
+    </script>
+  </body>
+</html>
