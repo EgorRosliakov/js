@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //З клавіатури вводиться ціна товару і кількість грошей. Якщо грошей не вистачає то відмовляємо у покупці, інакше, якщо ще залишаються гроші, то пропонуємо купити лотерею за 4 грн.
+      //Крок 0. Вводимо позначення
+      // Ціна товару priceOfTheProduct
+      // Кількість грошей amountOfMoney
+      // Вартітсь лотерейного квитка costOfLotteryTicket
+      // 1. Введеня величин
+      let priceOfTheProduct = parseFloat(prompt("Введіть ціну товару", "0"));
+      let amountOfMoney = parseFloat(
+        prompt("Введіть скільки у вас грошей", "0")
+      );
+      let costOfLotteryTicket = 4;
+
+      //2. Обчислюємо
+      if (amountOfMoney - priceOfTheProduct >= costOfLotteryTicket) {
+        if (
+          confirm(
+            "Товар куплено, не хочете купити лотерейний квиток за 4 грн.?"
+          )
+        )
+          alert("Лотерейний квиток куплен");
+        else alert("Шкода");
+      } else {
+        if (priceOfTheProduct < amountOfMoney) alert("Товар куплено");
+        else alert("Відмова, не вистачає грошей");
+      }
+    </script>
+  </body>
+</html>

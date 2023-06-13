@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //З клавіатури вводиться назва категорії водія (А-мотоцикл, В-легковий автомобіль, С-вантажний автомобіль). Вивести на екран назву транспортного засобу, яким він може керувати.
+      //Крок 0. Вводимо позначення
+      // назва категорії водія driverCategory
+      // 1. Введеня величин
+      const driverCategory = prompt("Введіть категорію водіння (A,B,C)");
+      let result;
+      //2. Обчислюємо
+      switch (driverCategory) {
+        case "A":
+          result = "Мотоцикл";
+          break;
+        case "B":
+          result = "легковий автомобіль";
+          break;
+        case "C":
+          result = "вантажний автомобіль";
+          break;
+
+        default:
+          result = "Введіть правильно категорію";
+          break;
+      }
+      //3. Виводимо
+      document.write(result);
+    </script>
+  </body>
+</html>
